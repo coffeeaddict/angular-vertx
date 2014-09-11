@@ -1,0 +1,38 @@
+{
+  "name": "angular-vertx",
+  "description": "A simple Vert.x event bus ine\btegration for AngularJS",
+  "version": "0.1.0",
+  "homepage": "https://github.com/coffeeaddict/angular-vertx",
+  "author": {
+    "name": "Hartog C. de Mik",
+    "email": "hartog.de.mik@gmail.com",
+    "url": "http://problemsolver-extraordinaire.blogspot.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coffeeaddict/angular-vertx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coffeeaddict/angular-vertx/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/coffeeaddict/angular-vertx/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/angular-vertx",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.4"
+  },
+  "keywords": []
+}
