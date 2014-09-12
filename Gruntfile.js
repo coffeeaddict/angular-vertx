@@ -1,11 +1,13 @@
 'use strict';
 
 module.exports = function(grunt) {
-
   // Project configuration.
   grunt.initConfig({
-    nodeunit: {
-      files: ['test/**/*_test.js'],
+    karma: {
+      unit: {
+        configFile: 'test/karma.conf.js',
+        singleRun: true
+      }
     },
     jshint: {
       options: {
@@ -28,21 +30,33 @@ module.exports = function(grunt) {
       },
       lib: {
         files: '<%= jshint.lib.src %>',
-        tasks: ['jshint:lib', 'nodeunit']
+        tasks: ['jshint:lib', 'karma']
       },
       test: {
         files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'nodeunit']
+        tasks: ['jshint:test', 'karma']
       },
     },
+    uglify: {
+      options: {
+        mangle: false
+      },
+      my_target: {
+        files: {
+          'angular-vertx.min.js': ['lib/vertxbus-2.1.js', 'lib/angular-vertx.js']
+        }
+      }
+    }
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-nodeunit');
+  grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'nodeunit']);
-
+  grunt.registerTask('default', ['jshint', 'karma']);
+  grunt.registerTask('test', ['karma']);
+  grunt.registerTask('build', ['jshint', 'karma', 'uglify']);
 };

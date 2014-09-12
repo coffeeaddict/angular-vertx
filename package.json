@@ -29,10 +29,16 @@
     "test": "grunt nodeunit"
   },
   "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-concat": "^0.5.0",
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt": "~0.4.4"
+    "grunt-karma": "^0.9.0",
+    "karma": "^0.12.23",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4"
   },
-  "keywords": []
+  "keywords": [],
 }
