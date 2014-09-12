@@ -1,0 +1,31 @@
+{
+  "name": "angular-vertx",
+  "main": "angular-vertx.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/coffeeaddict/angular-vertx",
+  "authors": [
+    "Hartog C. de Mik <hartog.de.mik@gmail.com>"
+  ],
+  "description": "A lightweight wrapper around the Vert.x event bus for AngularJS",
+  "keywords": [
+    "Vert.X",
+    "event",
+    "bus",
+    "AngularJS"
+  ],
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">= 1.0.8",
+    "sockjs": "~0.3.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.24"
+  }
+}
