@@ -13,6 +13,8 @@
   "node": true,
   "globals": {
      "angular": false,
+     "define": false,
+     "SockJS": false,
      "vertx": true
   }
 }
