@@ -1,6 +1,6 @@
 {
   "name": "angular-vertx",
-  "description": "A simple Vert.x event bus ine\btegration for AngularJS",
+  "description": "A simple Vert.x event bus integration for AngularJS",
   "version": "0.1.0",
   "homepage": "https://github.com/coffeeaddict/angular-vertx",
   "author": {
